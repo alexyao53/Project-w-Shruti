@@ -1,0 +1,23 @@
+number_list = []
+
+print("Enter a number: ")
+
+input = raw_input()
+while input.strip() != 'done':    
+    number_list.append(input.strip())
+    input = raw_input()
+
+max = 0
+for number in number_list:
+    if number > max:
+        max = number
+    
+min = max
+for number in number_list:
+    if number < min:
+        min = number
+
+print str(min)
+print str(max)
+
+

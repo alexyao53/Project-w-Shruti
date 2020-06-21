@@ -1,0 +1,5 @@
+print("Enter hours: ")
+hours = float(raw_input())
+print("Enter rate: ")
+rate = float(raw_input())
+print("Pay: " + str(rate*hours))

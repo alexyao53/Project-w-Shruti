@@ -1,0 +1,15 @@
+total = 0
+count = 0
+average = 0
+print("Enter a number: ")
+input = raw_input()
+while input.strip() != 'done':
+    total += int(input)
+    count += 1
+    input = raw_input()
+    
+print("Total: " + str(total))
+print("Count: " + str(count))
+print("Average: " + str(float(total)/count))
+
+

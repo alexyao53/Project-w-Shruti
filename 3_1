@@ -1,0 +1,10 @@
+print("Enter hours: ")
+hours = float(raw_input())
+print("Enter rate: ")
+rate = float(raw_input())
+
+if hours > 40:
+    rate*=1.5
+
+pay = rate*hours
+print("Pay: " + str(pay))

@@ -1,0 +1,4 @@
+print("Temperature in Celsius: ")
+celsius = float(raw_input())
+fahrenheit = celsius * 9 / 5 + 32
+print("Temperature in Fahrenheight is " + str(fahrenheit))
