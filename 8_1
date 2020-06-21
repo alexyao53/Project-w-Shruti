@@ -1,0 +1,13 @@
+def chop(listname):
+    del listname[0]
+    del listname[len(listname)-1]
+    print listname
+
+def middle(listname):
+    newlist = listname[1:len(listname)]
+    return newlist
+    print newlist
+
+list = [0, 1, 2, 3, 4, 5, 6]
+chop(list)
+middle(list)
