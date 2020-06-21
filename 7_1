@@ -1,0 +1,11 @@
+def shout():
+    print("Enter a file name: ")
+    filename = open(raw_input().strip(), 'r')
+#takes input as file name to be opened in "reading" mode; strip() is to get rid of white space after input
+    contents = filename.read()
+#reads everything in the file and puts it in a string as "contents"
+    print len(contents)
+    print contents.upper()
+#makes everything in the "Contents" string into uppercase
+
+shout()

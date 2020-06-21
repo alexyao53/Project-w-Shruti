@@ -1,0 +1,20 @@
+def spamconfidence():
+    print("Enter a file name: ")            #prompts for filename
+    filename = raw_input()                  #takes rawinput and assigns it as a string to variable filename
+    contents = open(filename.strip(), "r")  #opens file named filename in reading mode, and assigns the stuff inside to contents
+
+
+    spam_count = 0
+    spam_total = 0                           # initializing variables
+
+    for line in contents:                                        #for loop to process line by line
+        line = line.rstrip()                                     #strips \n from end of each line
+        if line.startswith("X-DSPAM-Confidence:"):               # string .startswith("") returns a boolean on whether the string starts with something or not
+            spam_count += 1
+            spam_total += float(line[20:26])                     #line[20:26] is string slicing (in this case the desired part was always index 20 to 25)
+
+    print("spam_count: " + str(spam_count))
+    print("spam_total: " +str(spam_total))
+    print("Average spam confidence: " + str(spam_total/spam_count))
+
+spamconfidence()

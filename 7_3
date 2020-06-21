@@ -1,0 +1,10 @@
+def easterEgg():
+    print("Enter the file name: ")
+    filename = raw_input().strip()
+    if filename=="na na boo boo":
+        print("ok lol")
+    else:
+        fhand = open(filename, 'r')
+        print fhand
+
+easterEgg()
