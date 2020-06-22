@@ -1,0 +1,40 @@
+fhand = open("romeo.txt")
+used_words = []
+
+
+for line in fhand:
+    words = line.split()
+    used_words += words
+
+#for word in used_words:
+#    for i in range(len(used_words)-1):
+#        if word == used_words[i+1]:
+#            used_words[i] = "remove"
+### didn't work
+
+for j in range(len(used_words)):
+    for k in range(len(used_words)):
+        if used_words[j]==used_words[k] and j!=k:
+            used_words[k]="remove"
+
+#for i in range(len(used_words)):
+#    if used_words[i]=="remove":
+#        used_words.pop(i)
+### didnt' work 
+
+print "List of used words:"
+print used_words
+
+
+while "remove" in used_words:
+    used_words.remove("remove")
+
+####in operator is a boolean that checks if element is in list. not variation: not in
+
+print "Processed used words:"
+print used_words
+
+used_words.sort()
+print "Sorted words:"
+print used_words
+

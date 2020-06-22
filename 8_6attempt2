@@ -1,0 +1,16 @@
+num_list=[]
+
+print("Enter a number: ")
+input = (raw_input())
+while input.strip() != 'done':
+    num_list += input           
+    input = (raw_input())
+
+print num_list
+
+print max(num_list)
+print min(num_list)
+
+### no errors thrown, but num_list seems to contain '\r' character in between every number
+### for example, if I enter 1 2 3 4 "done", the list comes out as ['1', '\r', '2', '\r', '3', '\r', '4', '\r'] ?
+### why is this?

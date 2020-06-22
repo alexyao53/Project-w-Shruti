@@ -1,0 +1,10 @@
+fhand = open("romeo.txt")
+used_words = []
+#unique_words = ["calibrate"]
+
+
+for line in fhand:
+    words = line.split()
+    used_words += words
+
+print used_words

@@ -1,0 +1,12 @@
+num_list=[]
+
+print("Enter a number: ")
+input = (raw_input())
+while input.strip() != 'done':
+    num_list += int(input)            #######error: 'int' object is not iterable
+    input = (raw_input())
+
+print num_list
+
+print max(num_list)
+print min(num_list)

@@ -1,0 +1,18 @@
+fhand = open("romeo.txt")
+used_words = ["calibrate"]
+words_to_add = []
+used_words_length = 0
+
+for line in fhand:
+    words = line.split()
+    for word in words:
+        #print word
+        for i in range(len(used_words)):
+            if word != used_words[0]:
+                print word
+                words_to_add.append(word)
+
+del(used_words[0])
+used_
+print words_to_add
+print used_words
