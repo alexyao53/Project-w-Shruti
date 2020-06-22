@@ -3,7 +3,7 @@ num_list=[]
 print("Enter a number: ")
 input = (raw_input())
 while input.strip() != 'done':
-    num_list += int(input)            #######error: 'int' object is not iterable
+    num_list += int(input)            #######error: 'int' object is not iterable? what does that mean and how can I add the int version of input into the list?
     input = (raw_input())
 
 print num_list
