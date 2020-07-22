@@ -5,14 +5,14 @@ pre_elements=0
 mat_dict = {}
 mat_elements=0
 
-#opening precursor miRNA and putting base-pair sequences into a list
+#opening precursor miRNA and putting base sequences into a list
 fhand = open("mouse_precursor_mir.fa")
 for line in fhand:
     if not line.startswith(">"):
         pre_list.append(line.strip())
         pre_elements+=1
 
-#opening mature miRNA and putting base-pair sequences into a dictionary. the KEY will be sequence, the VALUE will be # of matches in precursor mRNA
+#opening mature miRNA and putting base sequences into a dictionary. the KEY will be sequence, the VALUE will be # of matches in precursor mRNA
 fhand = open("mouse.matureT.fa")
 for line in fhand:
     if not line.startswith(">"):
